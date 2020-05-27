@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace Ftec.ProjWeb.WatchYourself.Service
+namespace Ftec.ProjWeb.WatchYourself.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {

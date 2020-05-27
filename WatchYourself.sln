@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ftec.ProjWeb.WatchYourself.Service", "Ftec.ProjWeb.WatchYourself.Service\Ftec.ProjWeb.WatchYourself.Service.csproj", "{9B671805-3E28-444E-895B-438B37259B33}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ftec.ProjWeb.WatchYourself.Api", "Ftec.ProjWeb.WatchYourself.Api\Ftec.ProjWeb.WatchYourself.Api.csproj", "{4C509530-4C73-4034-A4A1-11F984DC6C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ftec.ProjWeb.WatchYourself.Web", "Ftec.ProjWeb.WatchYourself.Web\Ftec.ProjWeb.WatchYourself.Web.csproj", "{9B671805-3E28-444E-895B-438B37259B33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ftec.ProjWeb.WatchYourself.Application", "Ftec.ProjWeb.WatchYourself.Application\Ftec.ProjWeb.WatchYourself.Application.csproj", "{1AAAE0A7-2C1B-4B4D-93C9-1A4D2B9DB811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ftec.ProjWeb.WatchYourself.Domain", "Ftec.ProjWeb.WatchYourself.Domain\Ftec.ProjWeb.WatchYourself.Domain.csproj", "{687C68A6-C7D1-474B-92C2-2910941FFA78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ftec.ProjWeb.WatchYourself.Repository", "Ftec.ProjWeb.WatchYourself.Repository\Ftec.ProjWeb.WatchYourself.Repository.csproj", "{252024B8-5469-4E61-A605-653074959A33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +19,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9B671805-3E28-444E-895B-438B37259B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B671805-3E28-444E-895B-438B37259B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B671805-3E28-444E-895B-438B37259B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B671805-3E28-444E-895B-438B37259B33}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C509530-4C73-4034-A4A1-11F984DC6C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C509530-4C73-4034-A4A1-11F984DC6C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C509530-4C73-4034-A4A1-11F984DC6C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C509530-4C73-4034-A4A1-11F984DC6C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B671805-3E28-444E-895B-438B37259B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B671805-3E28-444E-895B-438B37259B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B671805-3E28-444E-895B-438B37259B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B671805-3E28-444E-895B-438B37259B33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AAAE0A7-2C1B-4B4D-93C9-1A4D2B9DB811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAAE0A7-2C1B-4B4D-93C9-1A4D2B9DB811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAAE0A7-2C1B-4B4D-93C9-1A4D2B9DB811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAAE0A7-2C1B-4B4D-93C9-1A4D2B9DB811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{687C68A6-C7D1-474B-92C2-2910941FFA78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687C68A6-C7D1-474B-92C2-2910941FFA78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687C68A6-C7D1-474B-92C2-2910941FFA78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687C68A6-C7D1-474B-92C2-2910941FFA78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{252024B8-5469-4E61-A605-653074959A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{252024B8-5469-4E61-A605-653074959A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{252024B8-5469-4E61-A605-653074959A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{252024B8-5469-4E61-A605-653074959A33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

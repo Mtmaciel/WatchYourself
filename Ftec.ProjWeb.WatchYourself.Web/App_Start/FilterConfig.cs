@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Ftec.ProjWeb.WatchYourself.Service
+namespace Ftec.ProjWeb.WatchYourself.Web
 {
     public class FilterConfig
     {

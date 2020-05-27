@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Ftec.ProjWeb.WatchYourself.Service.Controllers
+namespace Ftec.ProjWeb.WatchYourself.Web.Controllers
 {
     public class HomeController : Controller
     {
