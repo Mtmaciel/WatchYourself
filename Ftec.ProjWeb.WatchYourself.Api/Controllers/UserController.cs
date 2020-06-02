@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace Ftec.ProjWeb.WatchYourself.Api.Controllers
 {
-    public class LoginController : ApiController
+    public class UserController : ApiController
     {
     }
 }

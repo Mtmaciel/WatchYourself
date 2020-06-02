@@ -7,9 +7,7 @@ using System.Web.Http;
 
 namespace Ftec.ProjWeb.WatchYourself.Api.Controllers
 {
-    public class DashBoardController : ApiController
+    public class StepsController : ApiController
     {
-
-
     }
 }

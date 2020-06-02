@@ -86,11 +86,12 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\DashBoardController.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\GoalsController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\StepsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Steps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ftec.ProjWeb.WatchYourself.Domain\Ftec.ProjWeb.WatchYourself.Domain.csproj">
+      <Project>{687C68A6-C7D1-474B-92C2-2910941FFA78}</Project>
+      <Name>Ftec.ProjWeb.WatchYourself.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

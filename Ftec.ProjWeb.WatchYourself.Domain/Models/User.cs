@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Ftec.ProjWeb.WatchYourself.Web.Models
+namespace Ftec.ProjWeb.WatchYourself.Domain.Models
 {
     public class User
     {

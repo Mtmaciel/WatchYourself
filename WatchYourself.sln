@@ -13,6 +13,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ftec.ProjWeb.WatchYourself.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ftec.ProjWeb.WatchYourself.Repository", "Ftec.ProjWeb.WatchYourself.Repository\Ftec.ProjWeb.WatchYourself.Repository.csproj", "{252024B8-5469-4E61-A605-653074959A33}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-SiteWeb", "1-SiteWeb", "{B64475FC-9700-402C-9F72-FB78035E7635}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Api", "2-Api", "{AADADADB-A87F-4F5B-9801-7F9A42D3F921}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Aplicação", "3-Aplicação", "{8B8BEF6A-7665-4849-AF82-0F427E011714}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Dominio", "4-Dominio", "{564ED3FB-6EC9-4A47-97BA-3690A9547498}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Repositorio", "5-Repositorio", "{6A54E244-E5CA-4BCA-AB23-333D449E8E66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +52,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C509530-4C73-4034-A4A1-11F984DC6C8F} = {AADADADB-A87F-4F5B-9801-7F9A42D3F921}
+		{9B671805-3E28-444E-895B-438B37259B33} = {B64475FC-9700-402C-9F72-FB78035E7635}
+		{1AAAE0A7-2C1B-4B4D-93C9-1A4D2B9DB811} = {8B8BEF6A-7665-4849-AF82-0F427E011714}
+		{687C68A6-C7D1-474B-92C2-2910941FFA78} = {564ED3FB-6EC9-4A47-97BA-3690A9547498}
+		{252024B8-5469-4E61-A605-653074959A33} = {6A54E244-E5CA-4BCA-AB23-333D449E8E66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFCAEF63-CB1D-4B9E-9FA3-B6C911D84454}

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ftec.ProjWeb.WatchYourself.Repository
+namespace Ftec.ProjWeb.WatchYourself.Domain.Enums
 {
-    public class Class1
+    public enum GoalTypeEnum
     {
+        HeartBeats = 1,
+        Steps
     }
 }
