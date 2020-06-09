@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Dominio", "4-Dominio", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Repositorio", "5-Repositorio", "{6A54E244-E5CA-4BCA-AB23-333D449E8E66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ftec.ProjWeb.WatchYourself.RepositoryTest", "Ftec.ProjWeb.WatchYourself.RepositoryTest\Ftec.ProjWeb.WatchYourself.RepositoryTest.csproj", "{35A5C7A2-814F-44D9-ADCF-E3692162B521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{252024B8-5469-4E61-A605-653074959A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{252024B8-5469-4E61-A605-653074959A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{252024B8-5469-4E61-A605-653074959A33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A5C7A2-814F-44D9-ADCF-E3692162B521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A5C7A2-814F-44D9-ADCF-E3692162B521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A5C7A2-814F-44D9-ADCF-E3692162B521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A5C7A2-814F-44D9-ADCF-E3692162B521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{1AAAE0A7-2C1B-4B4D-93C9-1A4D2B9DB811} = {8B8BEF6A-7665-4849-AF82-0F427E011714}
 		{687C68A6-C7D1-474B-92C2-2910941FFA78} = {564ED3FB-6EC9-4A47-97BA-3690A9547498}
 		{252024B8-5469-4E61-A605-653074959A33} = {6A54E244-E5CA-4BCA-AB23-333D449E8E66}
+		{35A5C7A2-814F-44D9-ADCF-E3692162B521} = {6A54E244-E5CA-4BCA-AB23-333D449E8E66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFCAEF63-CB1D-4B9E-9FA3-B6C911D84454}

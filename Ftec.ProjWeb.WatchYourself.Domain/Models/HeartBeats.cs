@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Ftec.ProjWeb.WatchYourself.Domain.Models
 {
-    public class HeartBeats
+    public class HeartBeat
     {
         public Guid Id { get; set; }
         public Guid UserId { get; set; }

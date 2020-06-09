@@ -13,6 +13,8 @@ namespace Ftec.ProjWeb.WatchYourself.Domain.Models
         public int Type { get; set; }
         public int Difficulty { get; set; }
         public int DashBoardType { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
 
     }
 }

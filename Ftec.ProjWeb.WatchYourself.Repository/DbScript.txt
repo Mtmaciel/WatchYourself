@@ -1,0 +1,75 @@
+﻿create table public."users"
+(
+    "id"  uuid  not null,
+    "name" character varying(255) not null,
+    "cpf_cnpj" character varying(19) not null,
+    "password" bytea not null,
+    "salt" bytea not null,
+    "email" character varying(255),
+    "phone" character varying(13),
+    "data_criacao" timestamp with time zone not null,
+    "data_alteracao" timestamp with time zone,
+    primary key ("id")
+)
+with (
+    oids = false
+);
+
+create table public."goals"
+(
+    "id"  uuid  not null,
+    "user_id"  uuid  not null,
+    "title" character varying(255) not null,
+    "type" int not null,
+    "difficulty" int not null,
+    "dashboardtype" int not null,
+	"startdate" timestamp with time zone not null,
+	"enddate" timestamp with time zone,
+    primary key ("id")
+)
+with (
+    oids = false
+);
+
+create table public."Steps"
+(
+    "id"  uuid  not null,
+    "user_id"  uuid  not null,
+    "quantity" int not null,
+	"date" timestamp with time zone not null,
+    primary key ("id")
+)
+with (
+    oids = false
+);
+
+create table public."heartbeat"
+(
+    "id"  uuid  not null,
+    "user_id"  uuid  not null,
+    "Frequency" int not null,
+	"date" timestamp with time zone not null,
+    primary key ("id")
+)
+with (
+    oids = false
+);
+
+
+alter table public."goals"
+    add constraint users_goals_fkey foreign key (user_id)
+references public.users (id) match simple
+on update no action
+on delete no action;
+
+alter table public."Steps"
+    add constraint users_Steps_fkey foreign key (user_id)
+references public.users (id) match simple
+on update no action
+on delete no action;
+
+alter table public."heartbeat"
+    add constraint users_heartbeat_fkey foreign key (user_id)
+references public.users (id) match simple
+on update no action
+on delete no action;
