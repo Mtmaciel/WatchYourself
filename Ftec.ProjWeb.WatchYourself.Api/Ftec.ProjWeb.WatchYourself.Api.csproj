@@ -87,6 +87,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\DashBoardController.cs" />
     <Compile Include="Controllers\GoalsController.cs" />
+    <Compile Include="Controllers\SmartWatchController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\StepsController.cs" />
     <Compile Include="Global.asax.cs">

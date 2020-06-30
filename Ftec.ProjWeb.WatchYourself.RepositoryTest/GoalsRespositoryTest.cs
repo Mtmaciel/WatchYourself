@@ -60,6 +60,7 @@ namespace Ftec.ProjWeb.WatchYourself.RepositoryTest
         {
             var goal = GoalsRepository.Select(new Guid());
             Assert.IsNull(goal);
+            
         }
 
         [Timeout(3000)]

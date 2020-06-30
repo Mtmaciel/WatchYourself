@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ftec.ProjWeb.WatchYourself.Application
+namespace Ftec.ProjWeb.WatchYourself.Application.Services
 {
-    public class Class1
+    class GoalService
     {
     }
 }
