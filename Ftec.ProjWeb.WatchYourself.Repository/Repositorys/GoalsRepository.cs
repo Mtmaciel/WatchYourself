@@ -2,91 +2,38 @@
 using Npgsql;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Ftec.ProjWeb.WatchYourself.Repository.Repositorys
 {
     public class GoalsRepository
     {
-        //todo Setar conection string no app config
-        //todo criar interfaces
-        private const string ConectionString = "Server=localhost; Port=5432; Database=WatchYourself; User Id=postgres; Password=Gcon123;";
+        private WatchYourselfDbContext Context { get; }
 
-        public static Goal Select(Guid id)
+        public GoalsRepository(WatchYourselfDbContext Context)
         {
-            Goal goal = null;
-            using (NpgsqlConnection con = new NpgsqlConnection(ConectionString))
-            {
-                con.Open();
-                NpgsqlCommand sql = new NpgsqlCommand("select * from goals where id=@id");
-                sql.Connection = con;
-                sql.Parameters.AddWithValue("id", id);
-                NpgsqlDataReader rd = sql.ExecuteReader();
-                if(rd.Read())
-                {
-                    goal = new Goal(){
-                        Title = rd["title"].ToString(),
-                        Type = Convert.ToInt32(rd["type"].ToString()),
-                        Difficulty = Convert.ToInt32(rd["difficulty"].ToString()),
-                        DashBoardType = Convert.ToInt32(rd["dashboardtype"].ToString()),
-                        StartDate = Convert.ToDateTime(rd["startdate"].ToString()),
-                        EndDate = Convert.ToDateTime(rd["enddate"].ToString()),
-                        Id = Guid.Parse(rd["id"].ToString()) 
-                    };
-
-                }
-            }
-            return goal;
+            this.Context = Context;
+        }
+        public Goal Select(Guid id)
+        {
+            return Context.Goals.Find(id);
         }
 
-        public static List<Goal> List()
+        public List<Goal> List(Guid id)
         {
-            List<Goal> goals = new List<Goal>();
-            using (NpgsqlConnection con = new NpgsqlConnection(ConectionString))
-            {
-                con.Open();
-                NpgsqlCommand sql = new NpgsqlCommand("select * from goals", con);
-                NpgsqlDataReader rd = sql.ExecuteReader();
-                while (rd.Read())
-                {
-                    goals.Add(new Goal()
-                    {
-                        Title = rd["title"].ToString(),
-                        Type = Convert.ToInt32(rd["type"].ToString()),
-                        Difficulty = Convert.ToInt32(rd["difficulty"].ToString()),
-                        DashBoardType = Convert.ToInt32(rd["dashboardtype"].ToString()),
-                        StartDate = Convert.ToDateTime(rd["startdate"].ToString()),
-                        Id = Guid.Parse(rd["id"].ToString())
-                    });
-
-                }
-            }
-            return goals;
+            return Context.Goals.Where(x => x.UserId.Equals(id)).OrderBy(x => x.Title).ToList();
         }
 
-        /*public static Guid Insert(Goal goal)
+        public int Insert(Goal goal)
         {
-            using (NpgsqlConnection con = new NpgsqlConnection(ConectionString))
-            {
-                con.Open();
-                NpgsqlCommand sql = new NpgsqlCommand(@"insert 
-                                                          into goals
-                                                        values(@id,@user_id,)", con);
-                NpgsqlDataReader rd = sql.ExecuteReader();
-                while (rd.Read())
-                {
-                    goals.Add(new Goal()
-                    {
-                        Title = rd["title"].ToString(),
-                        Type = Convert.ToInt32(rd["type"].ToString()),
-                        Difficulty = Convert.ToInt32(rd["difficulty"].ToString()),
-                        DashBoardType = Convert.ToInt32(rd["dashboardtype"].ToString()),
-                        StartDate = Convert.ToDateTime(rd["startdate"].ToString()),
-                        Id = Guid.Parse(rd["id"].ToString())
-                    });
+            Context.Goals.Add(goal);
+            return Context.SaveChanges();
+        }
 
-                }
-            }
-            return goals;
-        }*/
+        public int Delete(Guid id)
+        {
+            Context.Goals.Remove(Context.Goals.Find(id));
+            return Context.SaveChanges();
+        }
     }
 }

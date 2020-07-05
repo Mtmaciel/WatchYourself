@@ -8,19 +8,14 @@ using System.Threading.Tasks;
 
 namespace Ftec.ProjWeb.WatchYourself.Repository
 {
-    class WatchYourselfDbContext:DbContext
+    public class WatchYourselfDbContext:DbContext
     {
-        public WatchYourselfDbContext() : base("PgWatchyourself")
-        {}
+        public WatchYourselfDbContext() : base("PgWatchyourself"){}
 
         public DbSet<Goal> Goals { get; set; }
         public DbSet<HeartBeat> HeartBeats { get; set; }
         public DbSet<Steps> Steps { get; set; }
         public DbSet<User> Users { get; set; }
 
-        protected virtual void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Goal>().;
-        }
     }
 }

@@ -43,7 +43,22 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GoalService.cs" />
+    <Compile Include="Services\HeartBeatsService.cs" />
+    <Compile Include="Services\StepsService.cs" />
     <Compile Include="Services\UserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ftec.ProjWeb.WatchYourself.Domain\Ftec.ProjWeb.WatchYourself.Domain.csproj">
+      <Project>{687C68A6-C7D1-474B-92C2-2910941FFA78}</Project>
+      <Name>Ftec.ProjWeb.WatchYourself.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ftec.ProjWeb.WatchYourself.Repository\Ftec.ProjWeb.WatchYourself.Repository.csproj">
+      <Project>{252024B8-5469-4E61-A605-653074959A33}</Project>
+      <Name>Ftec.ProjWeb.WatchYourself.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

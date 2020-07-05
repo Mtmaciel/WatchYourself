@@ -45,6 +45,10 @@
     <Compile Include="Enums\DashBoardTypeEnum.cs" />
     <Compile Include="Enums\DifficultyEnum.cs" />
     <Compile Include="Enums\GoalTypeEnum.cs" />
+    <Compile Include="Interfaces\Repository\IHeartBeatsRepository.cs" />
+    <Compile Include="Interfaces\Repository\IStepsRepository.cs" />
+    <Compile Include="Interfaces\Services\IHeartBeatsService.cs" />
+    <Compile Include="Interfaces\Services\IStepsService.cs" />
     <Compile Include="Models\Goal.cs" />
     <Compile Include="Models\HeartBeats.cs" />
     <Compile Include="Models\SmartWatchData.cs" />

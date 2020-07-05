@@ -108,6 +108,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ftec.ProjWeb.WatchYourself.Application\Ftec.ProjWeb.WatchYourself.Application.csproj">
+      <Project>{1AAAE0A7-2C1B-4B4D-93C9-1A4D2B9DB811}</Project>
+      <Name>Ftec.ProjWeb.WatchYourself.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ftec.ProjWeb.WatchYourself.Domain\Ftec.ProjWeb.WatchYourself.Domain.csproj">
       <Project>{687C68A6-C7D1-474B-92C2-2910941FFA78}</Project>
       <Name>Ftec.ProjWeb.WatchYourself.Domain</Name>

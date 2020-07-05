@@ -3,8 +3,6 @@
     "id"  uuid  not null,
     "name" character varying(255) not null,
     "cpf_cnpj" character varying(19) not null,
-    "password" bytea not null,
-    "salt" bytea not null,
     "email" character varying(255),
     "phone" character varying(13),
     "data_criacao" timestamp with time zone not null,
