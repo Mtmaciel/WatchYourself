@@ -28,7 +28,7 @@ namespace Ftec.ProjWeb.WatchYourself.Application.Services
                 Id = new Guid(),
                 Date = data.DATE,
                 Quantity = data.STEPS,
-                UserId = data.UserId
+                UserId  = data.UserId
             };
 
             var result = _repository.Insert(step);

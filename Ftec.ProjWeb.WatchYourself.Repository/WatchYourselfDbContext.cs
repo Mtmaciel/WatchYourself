@@ -17,5 +17,16 @@ namespace Ftec.ProjWeb.WatchYourself.Repository
         public DbSet<Steps> Steps { get; set; }
         public DbSet<User> Users { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer<WatchYourselfDbContext>(null);
+            modelBuilder.HasDefaultSchema("public");
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Goal>().ToTable("goals", "public");
+            modelBuilder.Entity<HeartBeat>().ToTable("heartbeats", "public");
+            modelBuilder.Entity<Steps>().ToTable("steps", "public");
+            modelBuilder.Entity<User>().ToTable("users", "public");
+        }
+
     }
 }

@@ -29,7 +29,7 @@ with (
     oids = false
 );
 
-create table public."Steps"
+create table public."steps"
 (
     "id"  uuid  not null,
     "user_id"  uuid  not null,
@@ -54,7 +54,7 @@ with (
 );
 
 
-alter table public."goals"
+alter table public."Goals"
     add constraint users_goals_fkey foreign key (user_id)
 references public.users (id) match simple
 on update no action
@@ -66,7 +66,7 @@ references public.users (id) match simple
 on update no action
 on delete no action;
 
-alter table public."heartbeat"
+alter table public."Heartbeat"
     add constraint users_heartbeat_fkey foreign key (user_id)
 references public.users (id) match simple
 on update no action
