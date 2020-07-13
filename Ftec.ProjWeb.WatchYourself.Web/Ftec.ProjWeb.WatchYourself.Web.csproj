@@ -152,6 +152,7 @@
     <Content Include="Content\js\sb-admin-2.js" />
     <Content Include="Content\js\sb-admin-2.min.js" />
     <Content Include="Content\pages\Login\index.js" />
+    <Content Include="Content\pages\Shared\shared.js" />
     <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.js" />
     <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Content\vendor\bootstrap\js\bootstrap.js" />
@@ -2030,6 +2031,7 @@
     <Content Include="Views\Login\RememberPassword.cshtml" />
     <Content Include="Views\Login\CreateAccount.cshtml" />
     <Content Include="Views\Shared\_LayoutAdminLogin.cshtml" />
+    <Content Include="Views\Home\Ranking.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
