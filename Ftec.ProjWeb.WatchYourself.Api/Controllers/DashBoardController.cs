@@ -10,6 +10,9 @@ namespace Ftec.ProjWeb.WatchYourself.Api.Controllers
     public class DashBoardController : ApiController
     {
 
+        public HttpWebResponse get(Guid Id Goal)
+        {
 
+        }
     }
 }

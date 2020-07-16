@@ -1,4 +1,5 @@
 ﻿using Ftec.ProjWeb.WatchYourself.Domain.Models;
+using Ftec.ProjWeb.WatchYourself.Domain.Interfaces.Repository;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Linq;
 
 namespace Ftec.ProjWeb.WatchYourself.Repository.Repositorys
 {
-    public class GoalsRepository
+    public class GoalsRepository:IGoalRepository
     {
         private WatchYourselfDbContext Context { get; }
 
