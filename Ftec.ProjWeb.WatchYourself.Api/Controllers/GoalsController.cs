@@ -22,7 +22,7 @@ namespace Ftec.ProjWeb.WatchYourself.Api.Controllers
         {
             try
             {
-                var goals = _goalService.List();
+                var goals = _goalService.List(Guid.NewGuid());
                 return Request.CreateResponse(HttpStatusCode.OK, goals);
             }
             catch (Exception e)
